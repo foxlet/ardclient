@@ -1,4 +1,0 @@
-
-= Introduction =
-
-Ardclient is cliet for Apple Remote Desktop. It allows remote administration of Linux computers using the Remote Desktop application on Mac OS X.
