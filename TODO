@@ -1,0 +1,12 @@
+Send UNIX Command
+-----------------
+
+Obecne
+------
+
+[_] Tam, kde sa prijimaju potvrdenia paketov (napr. Send Command),
+    odosielat v cykle, kym sa neprijme potvrdenie.
+
+[_] security flags v get_info
+
+[_] v xlib urobit vynimku pri chybe

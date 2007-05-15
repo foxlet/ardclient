@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+
+import os
+
+from ardclient.client import Ardclient
+from ardclient.config import Config
+
+
+if __name__ == "__main__":
+    try:
+        config = Config()
+
+        ### Set UID and GID of the process if running as root
+        if os.getuid() == 0:
+            os.setuid(config.get_user_id())
+            #os.setgroups(config.get_group())
+            #os.setgid(config.get_group_id())
+
+        ardclient = Ardclient(config)
+        ardclient.start()
+    except KeyboardInterrupt:
+        pass
